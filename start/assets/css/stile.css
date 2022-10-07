@@ -1,0 +1,281 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 62.5%;
+}
+body {
+    color: #000;
+    font-size: 1.5rem;
+    font-family: 'Fira Sans', sans-serif;
+    line-height: 1.8;
+}
+h3 {
+    font-size: 3rem;
+    line-height: 1;
+}
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+a, .lni {
+    color: #e42424;
+}
+
+.btn {
+    color: white;
+    padding: 1rem;
+    border: none;
+    font-size: 1.9rem;
+    background: linear-gradient(0.25turn,#6cc1e2, #392f7a);
+}
+footer {
+    background-color: rgb(238, 238, 238);
+}
+
+/* HEADER */
+
+header {
+    text-transform: uppercase;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 5px 10px 10px #d3d3d3;            /* da vedere*/
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+}
+header div, nav {
+    padding: 1rem 1rem 0 1rem;
+    flex: 1 0 auto;
+}
+nav {
+    padding-top: 0;
+}
+.toggle, #menu_is_active {
+  display: none;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+header a {
+    text-decoration: none;
+}
+header a:hover {
+    text-decoration: underline;
+}
+.menu-item {
+    padding-left: 4rem;
+    display: none;
+    width: 100%;
+}
+#menu_is_active:checked ~ .menu-item {
+    display: block;
+}
+.toggle {
+    display: block;
+}
+.lni-more-alt {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 2.5rem;
+    right: 1rem;
+}
+/* MAIN */
+
+/* INDEX MAIN */
+
+#index-section {
+    padding: 4rem 2rem 1.5rem 2rem;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/banner.jpg);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.4);
+}
+
+#index-section p {
+    padding: 1rem 0;
+}
+
+#index-article {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+#index-article p, #index-banner p {
+    padding: 2.5rem 0;
+}
+
+#index-article .lni {
+    font-size: 4rem;
+}
+
+#index-banner {
+    padding: 4rem 2rem;
+    color: white;
+    text-align: center;
+    background-color: #0B0633;
+}
+
+/* ASIDE INDEX */
+
+#index-aside {
+    margin: 5rem auto;
+    text-align: center;
+}
+#index-aside div img {
+    width: 80%;
+}
+#index-aside .lni {
+    margin: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 5rem;
+}
+footer div {
+    margin-top: 1.5rem;
+}
+footer div:nth-child(3) {
+    margin-top: 4rem;
+}
+h3 {padding-bottom: 1rem;
+    font-weight: bold;
+}
+/* FIELDSET */
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    height: 3.5rem;
+    margin-top: 2rem;
+}
+
+/* RESPONSIVE */
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+
+    /* HEADER QUERY */
+
+    header   {
+        align-items: center;
+        flex-direction: row;
+    }
+
+    header div {
+        flex-grow: 2;
+        flex-basis: 16%;
+    }
+
+    nav {
+        margin: 1.5rem 3.5rem 0 0;
+        align-self: flex-start;
+        flex-grow: 1;
+        flex-basis: 60%;
+    }
+    
+    ul {
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .lni-more-alt {
+        display: none;
+    }
+
+    .menu-item {
+        display: block;
+    }
+
+    header a:hover {
+        color: #e42424;
+    }
+
+    header a {
+        color: gray;
+    }
+
+    /* FOOTER QUERY */
+
+    footer {
+        padding-top: 2rem;
+        align-items: baseline;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer div:first-child, footer div:nth-child(2) , footer div:nth-child(3) {
+        flex-grow: 1;
+        flex-basis: 30%;
+    }
+
+
+
+    footer div:last-child {
+        padding-top: 1rem;
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+}
+
+/* INDEX */
+
+@media screen and (min-width: 768px) {
+    #index-section {
+        padding: 15vw 20vh;
+    }
+
+    #index-article {
+        justify-items: space-around;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    #index-article div:first-child, #index-aside {
+        flex-basis: 100%;
+    }
+
+    #index-article .card {
+        padding: 0 1rem;
+        flex-grow: 1;
+        flex-basis: 25%;
+    }
+
+    #index-article .card p {
+        text-align: left;
+    }
+
+    #index-aside {
+        display: flex;
+    }
+
+    #index-aside .card-container {
+        text-align: left;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 1170px) {
+
+}
+
+
+
