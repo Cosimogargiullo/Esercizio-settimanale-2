@@ -155,12 +155,16 @@ header a:hover {
     margin-bottom: 2.5rem;
 }
 
+#main-contatti form .btn {
+    margin-top: 2rem;
+}
+
 #main-contatti form input {
     font-style: italic;
 }
 
 #main-contatti div p {
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
 }
 
 /* FOOTER */
@@ -301,3 +305,42 @@ input {
     }
 
 }
+
+/* CONTATTI QUERY */
+
+@media screen and (min-width: 768px) {
+
+    #main-contatti {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #main-contatti h2 {
+        flex-grow: 1;
+        flex-basis: 100%;
+    }
+
+    #main-contatti form {
+        flex-grow: 1;
+        flex-basis: 45%;
+    }
+
+    #main-contatti .aside {
+        align-items: center;
+        flex-grow: 1;
+        flex-basis: 20%;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+
+    #main-chisiamo {
+        text-align: center;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+}
+
