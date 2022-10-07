@@ -34,7 +34,9 @@ a, .lni {
 footer {
     background-color: rgb(238, 238, 238);
 }
-
+abbr {
+    text-decoration: none;
+}
 /* HEADER */
 
 header {
@@ -261,6 +263,7 @@ input {
     }
 
     #index-aside {
+        justify-content: center;
         display: flex;
     }
 
@@ -274,6 +277,8 @@ input {
 }
 
 @media screen and (min-width: 1170px) {
+
+    
 
 }
 
