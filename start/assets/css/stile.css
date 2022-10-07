@@ -137,6 +137,32 @@ header a:hover {
     margin: 1rem;
 }
 
+/* Main Contatti */
+
+#main-contatti {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+#main-contatti {
+    flex-direction: column;
+    display: flex;
+}
+
+#main-contatti form {
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 2.5rem;
+}
+
+#main-contatti form input {
+    font-style: italic;
+}
+
+#main-contatti div p {
+    padding-bottom: 1rem;
+}
+
 /* FOOTER */
 
 footer {
@@ -275,12 +301,3 @@ input {
     }
 
 }
-
-@media screen and (min-width: 1170px) {
-
-    
-
-}
-
-
-
